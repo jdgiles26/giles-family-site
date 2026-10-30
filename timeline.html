@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Timeline — The Giles of Adair County</title>
+<meta name="description" content="Two hundred and thirty years of the Giles family of Adair County, Kentucky, on one scrubbable timeline.">
+<meta property="og:title" content="Timeline — The Giles of Adair County"><meta property="og:description" content="Two hundred and thirty years of the Giles family of Adair County, Kentucky, on one scrubbable timeline."><meta property="og:image" content="assets/img/og-card.png"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#efe4c9">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/fonts.css"><link rel="stylesheet" href="assets/css/site.css"><link rel="stylesheet" href="assets/css/timeline.css">
+</head>
+<body class="timeline-page">
+<main id="main">
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">1790 — today</div>
+      <h1>Two Centuries on One Line</h1>
+      <p>Drag the brass needle, use your arrow keys, or press play. Family moments are in rust; the wider world is in green.</p>
+    </div>
+  </header>
+  <section class="wrap tl-wrap">
+    <div class="tl-ctl">
+      <button class="btn small" id="tl-prev" aria-label="Previous event">←</button>
+      <button class="btn small solid" id="tl-play" aria-pressed="false">▶ Play</button>
+      <button class="btn small" id="tl-next" aria-label="Next event">→</button>
+      <label class="tl-filter"><input type="checkbox" id="tl-world" checked> Show world events</label>
+      <output id="tl-year" class="tl-year" aria-live="polite">1792</output>
+    </div>
+    <div class="tl-scroll">
+      <div class="tl-track" id="tl-track" role="slider" tabindex="0" aria-label="Timeline year" aria-valuemin="1790" aria-valuemax="2026" aria-valuenow="1792">
+        <div class="tl-bands" id="tl-bands"></div>
+        <div class="tl-axis" id="tl-axis"></div>
+        <div class="tl-dots" id="tl-dots"></div>
+        <div class="tl-needle" id="tl-needle"><span></span></div>
+      </div>
+    </div>
+    <article class="tl-card" id="tl-card" aria-live="polite"></article>
+    <details class="tl-all">
+      <summary>Every event, in order</summary>
+      <ol id="tl-list"></ol>
+    </details>
+  </section>
+</main>
+<script src="assets/js/data.js"></script><script src="assets/js/family-sync.js"></script><script type="family/deferred" data-src="assets/js/stories.js"></script><script type="family/deferred" data-src="assets/js/common.js"></script><script type="family/deferred" data-src="assets/js/timeline.js"></script>
+</body>
+</html>
