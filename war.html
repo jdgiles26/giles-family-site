@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rifleman, 9th Infantry — William Cecil Giles in World War II</title>
+<meta name="description" content="William Cecil Giles of Knifley, Kentucky: rifleman, Company E, 9th Infantry; wounded in France 3 August 1944; Purple Heart.">
+<meta property="og:title" content="William Cecil Giles: Rifleman, 9th Infantry"><meta property="og:image" content="assets/img/og-card.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/fonts.css"><link rel="stylesheet" href="assets/css/site.css"><link rel="stylesheet" href="assets/css/war.css">
+</head>
+<body class="war">
+<main id="main">
+  <section class="war-hero">
+    <div class="wrap">
+      <div class="eyebrow">Chapter V · The war chapter</div>
+      <h1>Rifleman,<br><span>9th Infantry</span></h1>
+      <p class="lede">William Cecil Giles of Knifley, Kentucky. Inducted October 1943. In France by the summer of 1944. Wounded on the third of August. Purple Heart.</p>
+      <div class="headline reveal"><span>KNIFLEY SOLDIER GIVEN HONORABLE DISCHARGE</span><small>Adair County News · 6 June 1945</small></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:40px">
+    <div class="wrap narrow">
+      <p class="dropcap lede reveal">He was nineteen, a young farmer from Knifley. (His discharge would later sketch him in a line: blue eyes, brown hair, five feet eleven, 138 pounds.) On 5 October 1943 the Army inducted <button class="chip" data-person="william"><span class="dot"></span>William C. Giles</button>; on the 26th he entered active service at Louisville. A few weeks later the <em>Adair County News</em> printed the list of local men sent from the reception center at Fort Thomas to Camp Atterbury, Indiana — and there he was: “William C. Giles, Knifley.”</p>
+      <p class="reveal">He trained as a <strong>rifleman</strong> — military occupational specialty 745 — and qualified as a marksman with the M1 rifle. On 1 July 1944 he sailed from the United States. On 16 July he arrived in the European Theater of Operations. His outfit: <strong>Company E, 9th Infantry</strong>.</p>
+      <p class="reveal">Eighteen days later, on <strong>3 August 1944</strong>, he was wounded in France. The home paper put it plainly: “severe leg wounds.”</p>
+    </div>
+  </section>
+
+  <!-- Chronology strip -->
+  <section class="section" style="padding-top:0" aria-label="William's service, step by step">
+    <div class="wrap">
+      <ol class="service reveal" id="service"></ol>
+    </div>
+  </section>
+
+  <!-- Discharge viewer -->
+  <section class="section doc-section" id="discharge">
+    <div class="wrap">
+      <div class="eyebrow reveal">The document</div>
+      <h2 class="reveal">Read the discharge yourself</h2>
+      <p class="reveal" style="max-width:760px">This is the real thing: William’s Army of the United States Honorable Discharge and Report of Separation, kept in the family by William’s daughter Alice, who gave it to her nephew Joshua. The paper carries the Adair County clerk’s filing stamp and a note that it is a certified copy from <em>Discharge Book No. 2, page 119</em>. Zoom in, drag around, and tap the numbered pins — each one opens a box on the form.</p>
+      <div class="viewer reveal" id="viewer">
+        <div class="vstage" id="vstage" tabindex="0" aria-label="Zoomable discharge document. Arrow keys pan, plus and minus zoom.">
+          <div class="vlayer" id="vlayer"><img id="vimg" src="assets/img/archive/discharge-full.jpg" alt="William C. Giles, Army of the United States Honorable Discharge, given at William Beaumont General Hospital, El Paso, Texas, 30 May 1945" draggable="false"><div id="pins"></div></div>
+          <div class="vctl" role="group" aria-label="Document zoom">
+            <button class="icon-btn" id="vz-in" aria-label="Zoom in">+</button><button class="icon-btn" id="vz-out" aria-label="Zoom out">−</button><button class="icon-btn" id="vz-reset" aria-label="Reset view">⟲</button><button class="icon-btn" id="vz-color" aria-pressed="false" aria-label="Toggle original color">◐</button>
+          </div>
+        </div>
+        <aside class="vnotes" aria-label="Annotations">
+          <div class="vnote" id="vnote" aria-live="polite"><span class="eyebrow">Tap a pin</span><h3>An Army form, line by line</h3><p>Each numbered pin marks a box on the discharge. Select one here or on the document.</p></div>
+          <ol class="vlist" id="vlist"></ol>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Normandy map -->
+  <section class="section" id="normandy">
+    <div class="wrap">
+      <div class="eyebrow reveal">The road through Normandy · summer 1944</div>
+      <h2 class="reveal">With the Manchus, from Omaha Beach toward Vire</h2>
+      <p class="reveal" style="max-width:820px">The <strong>9th Infantry Regiment</strong> — nicknamed the “Manchus” since the China Relief Expedition of 1900 — was one of the three infantry regiments of the <strong>2nd Infantry Division</strong>, the “Indianhead” division. (It is easy to confuse with the 9th Infantry <em>Division</em>, a different outfit.) Press play, or drag the slider, to follow the regiment’s general line of advance in the summer William joined it.</p>
+      <div class="mapbox reveal">
+        <svg id="nmap" viewBox="0 0 1000 1079" role="img" aria-labelledby="nmap-t"><title id="nmap-t">Map of Normandy showing the 2nd Infantry Division’s advance from Omaha Beach in June 1944 to the drive toward Vire in early August 1944</title></svg>
+        <div class="mappanel">
+          <div class="mstep" id="mstep" aria-live="polite"></div>
+          <div class="mctl"><button class="btn small solid" id="mplay">▶ Play</button><label class="sr" for="mrange">Scrub through the campaign</label><input type="range" id="mrange" min="0" max="1000" value="0"></div>
+          <ol class="mlist" id="mlist"></ol>
+          <p class="mnote">Unit route simplified from published histories of the 2nd Infantry Division; William’s own dates come from his discharge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap narrow">
+      <div class="eyebrow reveal">Afterward</div>
+      <h2 class="reveal">The long way home</h2>
+      <p class="reveal">William left the European Theater on 26 December 1944 and was back in the United States on 3 January 1945. That spring he married <button class="chip" data-person="bertha"><span class="dot"></span>Bertha Burton</button>. On 30 May 1945, at William Beaumont General Hospital in El Paso, Texas, the Army gave him his honorable discharge — a Certificate of Disability for Discharge, with the remark that he was not physically qualified for re-enlistment. He wore the European–African–Middle Eastern Theater ribbon with one battle star, and the <strong>Purple Heart</strong>.</p>
+      <p class="reveal">He reached Adair County on Saturday, 1 June 1945. The paper itself is stamped “filed for record” on 18 June 1945, and it carries the county clerk’s certification, dated 15 August 1960, that it is a true copy from Discharge Book No. 2. That certified copy stayed in the family. William’s daughter Alice kept it and later gave it to Joshua.</p>
+      <p class="reveal">His regiment fought on without him: the siege of Brest, the Battle of the Bulge, and the end of the war near Pilsen, Czechoslovakia.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0" aria-label="From the hometown paper">
+    <div class="wrap">
+      <div class="eyebrow reveal" style="text-align:center">From the hometown paper</div>
+      <h2 class="reveal" style="text-align:center">The Adair County News kept watch</h2>
+      <div class="clips">
+        <figure class="archival reveal" tabindex="0"><img src="assets/img/archive/acn-1943-atterbury.jpg" alt="Adair County News, November 1943: Adair Men With The Armed Forces — group of Adair men sent to Camp Atterbury, including William C. Giles, Knifley"><figcaption>10 Nov 1943 — “William C. Giles, Knifley” sent to Camp Atterbury.</figcaption></figure>
+        <figure class="archival reveal d1" tabindex="0"><img src="assets/img/archive/acn-1945-discharge.jpg" alt="Adair County News, 6 June 1945: Pvt. Giles had been in the armed forces for twenty months; served overseas six months; severe leg wounds in France on August 3, 1944"><figcaption>6 Jun 1945 — “severe leg wounds in France on August 3, 1944.”</figcaption></figure>
+        <figure class="archival reveal d2" tabindex="0"><img src="assets/img/archive/acn-1942-walter.jpg" alt="Adair County News, 4 November 1942: G. Walter Giles, Jr., son of Mr. and Mrs. Luther Giles, of Knifley, is stationed at Ft. Leonard Wood, Mo."><figcaption>4 Nov 1942 — brother Walter at Fort Leonard Wood.</figcaption></figure>
+        <figure class="archival reveal d3" tabindex="0"><img src="assets/img/archive/acn-1945-purdy.jpg" alt="Adair County News, 13 June 1945: Mrs. Flossie Burton and Mrs. Melzane Farmer left to visit their brother, Pfc. Walter Giles, stationed in Virginia"><figcaption>13 Jun 1945 — the sisters go to see Walter.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/js/data.js"></script><script src="assets/js/family-sync.js"></script><script type="family/deferred" data-src="assets/js/geo.js"></script><script type="family/deferred" data-src="assets/js/common.js"></script><script type="family/deferred" data-src="assets/js/war.js"></script>
+</body>
+</html>

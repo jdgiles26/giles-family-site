@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Family Tree — The Giles of Adair County</title>
+<meta name="description" content="Interactive Giles family tree, fan chart and relationship explorer.">
+<meta property="og:title" content="The Giles Family Tree"><meta property="og:image" content="assets/img/og-card.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/fonts.css"><link rel="stylesheet" href="assets/css/site.css"><link rel="stylesheet" href="assets/css/tree.css"><link rel="stylesheet" href="assets/css/editor.css">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap"><div class="eyebrow">Seven generations · one family</div><h1>The Family Tree</h1>
+    <p>Drag to pan, scroll or pinch to zoom, and click anyone to open their story. Gold frames mark Joshua’s direct line.</p></div>
+  </section>
+
+  <section class="wrap" aria-label="Family tree viewer">
+    <div class="gen-meter" id="gen-meter" aria-live="polite"></div>
+    <div class="toolbar" role="toolbar" aria-label="Tree controls">
+      <div class="seg" role="group" aria-label="View">
+        <button class="btn small" id="v-tree" aria-pressed="true">Tree</button><button class="btn small" id="v-fan" aria-pressed="false">Fan chart</button>
+      </div>
+      <div class="tsearch"><label class="sr" for="tq">Find a person in the tree</label><input id="tq" placeholder="Find someone…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="tq-list"><ul id="tq-list" role="listbox"></ul></div>
+      <div class="seg" role="group" aria-label="Zoom">
+        <button class="btn small" id="z-out" aria-label="Zoom out">−</button><button class="btn small" id="z-fit">Fit</button><button class="btn small" id="z-in" aria-label="Zoom in">+</button>
+      </div>
+      <button class="btn small" id="t-line" aria-pressed="false">Joshua’s line</button>
+      <button class="btn small" id="t-collapse">Collapse branches</button>
+      <div class="seg" role="group" aria-label="Poster">
+        <button class="btn small solid" id="t-svg">Download poster (SVG)</button><a class="btn small" href="poster.html" id="t-pdf">Print poster / PDF</a>
+      </div>
+    </div>
+    <div class="stage" id="stage" tabindex="0" aria-label="Family tree. Use arrow keys to pan and plus or minus to zoom.">
+      <svg id="tree-svg" role="group" aria-label="Giles family tree"><g id="viewport"></g></svg>
+      <svg id="fan-svg" viewBox="0 0 900 530" role="group" aria-label="Fan chart of Joshua’s paternal ancestors" hidden></svg>
+      <div class="hint" id="hint">Drag · Scroll to zoom · Click a card</div>
+    </div>
+  </section>
+
+  <section class="section" id="relate">
+    <div class="wrap">
+      <div class="rel-card">
+        <div class="eyebrow">Relationship explorer</div>
+        <h2>“How am I related to…?”</h2>
+        <p>Pick any two people and we’ll walk the branches between them.</p>
+        <div class="rel-pick">
+          <label>Person A<select id="ra"></select></label>
+          <button class="icon-btn" id="rswap" type="button" aria-label="Swap people">⇄</button>
+          <label>Person B<select id="rb"></select></label>
+        </div>
+        <div class="rel-out" id="rout" aria-live="polite"></div>
+        <div class="rel-path" id="rpath"></div>
+        <button class="btn small" id="rshow">Light up the path in the tree</button>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/js/data.js"></script><script src="assets/js/family-sync.js"></script><script type="family/deferred" data-src="assets/js/common.js"></script><script type="family/deferred" data-src="assets/js/tree-core.js"></script><script type="family/deferred" data-src="assets/js/tree.js"></script>
+<script type="family/deferred" data-src="assets/js/editor.js"></script>
+</body>
+</html>
