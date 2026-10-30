@@ -1,0 +1,11 @@
+.pp-acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:1.2em!important}
+.pp-tip{font-size:.85rem;color:var(--ink2);font-style:italic}
+.pp-sheet{max-width:1500px;margin:0 auto 80px;padding:0 16px}
+.pp-sheet svg{width:100%;height:auto;display:block;box-shadow:0 30px 60px var(--shadow);background:#f1e4c8}
+@media print{
+  @page{size:landscape;margin:8mm}
+  .nav,.footer,footer,.no-print,.genrail,.gencount,.toast,.turn,body::before{display:none!important}
+  body{background:#fff!important}
+  .pp-sheet{margin:0;padding:0;max-width:none}
+  .pp-sheet svg{box-shadow:none;width:100%;height:auto;max-height:190mm}
+}

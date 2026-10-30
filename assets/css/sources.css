@@ -1,0 +1,10 @@
+.src-wrap{max-width:900px;margin-bottom:80px}
+.src-notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:30px}
+.src-note{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold);padding:16px 18px}
+.src-note h3{font-size:1.1rem;margin-bottom:.3em}
+.src-note p{margin:0;font-size:.95rem}
+.src-sec{margin-top:34px}
+.src-sec h2{font-size:1.5rem;border-bottom:1px solid var(--line);padding-bottom:.3em}
+.src-sec ol{padding-left:1.4em;font-size:.98rem}
+.src-sec li{margin-bottom:.55em}
+.src-sec b{font-family:var(--display)}
