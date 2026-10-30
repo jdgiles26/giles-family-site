@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Family Tree Poster — The Giles of Adair County</title>
+<meta name="description" content="A printable seven-generation poster of the Giles family of Adair County, Kentucky.">
+<meta property="og:title" content="Family Tree Poster — The Giles of Adair County"><meta property="og:description" content="A printable seven-generation poster of the Giles family of Adair County, Kentucky."><meta property="og:image" content="assets/img/og-card.png"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#efe4c9">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/fonts.css"><link rel="stylesheet" href="assets/css/site.css"><link rel="stylesheet" href="assets/css/poster.css">
+</head>
+<body class="poster-page">
+<main id="main">
+  <header class="page-hero no-print">
+    <div class="wrap">
+      <div class="eyebrow">For the wall at home</div>
+      <h1>The Family Tree Poster</h1>
+      <p>Seven generations on one sheet. Print it, save it as a PDF, or download the full-resolution SVG for a print shop.</p>
+      <p class="pp-acts"><button class="btn solid" id="pp-print">Print / Save as PDF</button> <button class="btn" id="pp-svg">Download SVG</button> <a class="btn" href="tree.html">Back to the interactive tree</a></p>
+      <p class="pp-tip">Tip: in the print dialog choose <em>Landscape</em> and <em>Save as PDF</em>. Set paper to Tabloid or larger for a wall-sized print.</p>
+    </div>
+  </header>
+  <section class="pp-sheet" id="pp-sheet" aria-label="Family tree poster"></section>
+</main>
+<script src="assets/js/data.js"></script><script src="assets/js/family-sync.js"></script><script type="family/deferred" data-src="assets/js/common.js"></script><script type="family/deferred" data-src="assets/js/tree-core.js"></script>
+<script type="family/deferred">
+(function(){
+  var svg = window.TreeCore.posterSVG();
+  document.getElementById('pp-sheet').innerHTML = svg;
+  document.getElementById('pp-print').onclick = function(){ window.print(); };
+  document.getElementById('pp-svg').onclick = function(){ var a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml'})); a.download='giles-family-tree-poster.svg'; document.body.append(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href); a.remove();},500); window.toast('Poster downloaded'); };
+})();
+</script>
+</body>
+</html>

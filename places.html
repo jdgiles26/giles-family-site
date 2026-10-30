@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Places — The Giles of Adair County</title>
+<meta name="description" content="From Virginia to the hills of Adair County, Kentucky, and north to Indiana and Ohio: an interactive map of the Giles family journey.">
+<meta property="og:title" content="Places — The Giles of Adair County"><meta property="og:description" content="From Virginia to the hills of Adair County, Kentucky, and north to Indiana and Ohio: an interactive map of the Giles family journey."><meta property="og:image" content="assets/img/og-card.png"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#efe4c9">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"><link rel="icon" href="assets/img/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/fonts.css"><link rel="stylesheet" href="assets/css/site.css"><link rel="stylesheet" href="assets/css/places.css">
+</head>
+<body class="places-page">
+<main id="main">
+  <header class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">The map of a family</div>
+      <h1>Roads Out of Virginia, Roads Back to Adair</h1>
+      <p>Six journeys, one family. Pick a chapter and watch the road draw itself — then tap any stop.</p>
+    </div>
+  </header>
+  <section class="wrap">
+    <div class="pl-tabs" role="tablist" id="pl-tabs" aria-label="Journeys"></div>
+    <div class="pl-grid">
+      <div class="pl-mapwrap">
+        <svg id="kmap" viewBox="0 0 1000 796" role="img" aria-labelledby="kmap-t"><title id="kmap-t">Map of Kentucky, Indiana, Ohio and neighboring states showing Giles family places</title></svg>
+        <div class="pl-zoom"><button class="icon-btn" id="pl-all" aria-label="Show the whole region" title="Whole region">⤢</button></div>
+      </div>
+      <aside class="pl-side">
+        <div class="pl-head" id="pl-head" aria-live="polite"></div>
+        <ol class="pl-stops" id="pl-stops"></ol>
+      </aside>
+    </div>
+    <p class="pl-note">Map drawn from public U.S. state and county boundaries. Town positions are approximate.</p>
+  </section>
+</main>
+<script src="assets/js/data.js"></script><script src="assets/js/family-sync.js"></script><script type="family/deferred" data-src="assets/js/geo.js"></script><script type="family/deferred" data-src="assets/js/common.js"></script><script type="family/deferred" data-src="assets/js/places.js"></script>
+</body>
+</html>
