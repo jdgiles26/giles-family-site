@@ -1,0 +1,8 @@
+{
+  "name": "giles-family-site",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "26.x" },
+  "scripts": { "dev": "node tools/dev-server.mjs", "seed": "node tools/make-seed.mjs" },
+  "dependencies": { "@vercel/blob": "^0.27.0" }
+}
